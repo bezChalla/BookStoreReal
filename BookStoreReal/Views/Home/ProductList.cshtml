@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ProductList";
+
+    List<string> products = new List<string>();
+    products.Add("Notebook");
+    products.Add("Pencil");
+    products.Add("Pen");
+    products.Add("Book");
+} 
+
+<h2>Product List</h2>
+
+<ul>
+    @foreach (var product in products)
+        {
+            <li>@product</li>
+        }
+</ul>
+
